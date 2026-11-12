@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>航空英语缩略语拼写练习（Lesson 1–8）</title>
+  <style>
+    :root {
+      --bg: #f1f5f9;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --primary-soft: #e0f2fe;
+      --success: #16a34a;
+      --success-bg: #f0fdf4;
+      --success-border: #bbf7d0;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --danger-border: #fecaca;
+      --warn: #d97706;
+      --warn-bg: #fffbeb;
+      --warn-border: #fde68a;
+      --shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 4px 10px -6px rgba(15, 23, 42, 0.05);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .app-shell {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 14px 14px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Header */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      color: #ffffff;
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(56, 189, 248, 0.2);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #38bdf8;
+    }
+
+    .brand-text h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-text p {
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .topbar-actions {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .icon-btn {
+      appearance: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 8px 11px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 38px;
+      transition: background 0.15s ease;
+    }
+
+    .icon-btn:hover, .icon-btn:active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Controls & Stats */
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .select-group {
+      display: flex;
+      gap: 8px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    select {
+      appearance: none;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 28px 8px 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      min-height: 40px;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .stat-box {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 6px;
+      text-align: center;
+    }
+
+    .stat-val {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .stat-val.accent { color: var(--primary); }
+    .stat-val.good { color: var(--success); }
+    .stat-val.bad { color: var(--danger); }
+
+    .stat-lbl {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .progress-track {
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #0284c7, #16a34a);
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    /* Quiz Card */
+    .quiz-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px 18px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .badge-lesson {
+      background: var(--primary-soft);
+      color: var(--primary-hover);
+    }
+
+    .badge-retry {
+      background: var(--warn-bg);
+      color: var(--warn);
+      border: 1px solid var(--warn-border);
+    }
+
+    .badge-queue {
+      background: var(--surface-soft);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .prompt-area {
+      text-align: center;
+      padding: 14px 10px 6px;
+    }
+
+    .prompt-hint {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .abbr-display {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: #0f172a;
+      line-height: 1.15;
+      word-break: break-word;
+    }
+
+    .input-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .spell-input {
+      width: 100%;
+      padding: 14px 14px;
+      font-size: 16px; /* >= 16px prevents iOS/WeChat auto-zoom */
+      font-weight: 500;
+      color: var(--text);
+      background: var(--surface-soft);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      outline: none;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .spell-input:focus {
+      border-color: var(--primary);
+      background: #ffffff;
+    }
+
+    .spell-input:disabled {
+      background: #f1f5f9;
+      color: #475569;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      appearance: none;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: transform 0.08s ease, background 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+      flex: 2;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn-secondary {
+      background: var(--surface-soft);
+      color: var(--text);
+      border: 1px solid var(--border);
+      flex: 1;
+    }
+
+    .btn-secondary:hover {
+      background: #e2e8f0;
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: #ffffff;
+      width: 100%;
+    }
+
+    .btn-danger-outline {
+      background: transparent;
+      color: var(--danger);
+      border: 1px solid var(--danger-border);
+      padding: 8px 12px;
+      min-height: 38px;
+      font-size: 13px;
+    }
+
+    /* Feedback Box */
+    .feedback-box {
+      border-radius: 14px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .feedback-box.show {
+      display: flex;
+    }
+
+    .feedback-box.is-correct {
+      background: var(--success-bg);
+      border-color: var(--success-border);
+    }
+
+    .feedback-box.is-wrong {
+      background: var(--danger-bg);
+      border-color: var(--danger-border);
+    }
+
+    .feedback-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .feedback-box.is-correct .feedback-title { color: var(--success); }
+    .feedback-box.is-wrong .feedback-title { color: var(--danger); }
+
+    .answer-block {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+      padding: 10px 12px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .answer-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .answer-en {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 2px;
+      word-break: break-word;
+    }
+
+    .answer-cn {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1e293b;
+      margin-top: 2px;
+    }
+
+    .answer-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .user-wrong-text {
+      font-size: 14px;
+      color: var(--danger);
+      text-decoration: line-through;
+      margin-top: 2px;
+      word-break: break-word;
+    }
+
+    .queue-notice {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--warn);
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Completion Screen */
+    .complete-card {
+      display: none;
+      text-align: center;
+      padding: 28px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .complete-card.show {
+      display: flex;
+    }
+
+    .complete-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--success-bg);
+      color: var(--success);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Modal (Glossary & Confirm) */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.55);
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 50;
+      padding: 0;
+    }
+
+    @media (min-width: 640px) {
+      .modal-backdrop {
+        align-items: center;
+        padding: 16px;
+      }
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-sheet {
+      background: var(--surface);
+      width: 100%;
+      max-width: 640px;
+      max-height: 85vh;
+      border-radius: 20px 20px 0 0;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
+    }
+
+    @media (min-width: 640px) {
+      .modal-sheet {
+        border-radius: 20px;
+      }
+    }
+
+    .modal-header {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .modal-header h2 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .modal-close {
+      appearance: none;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .modal-body {
+      padding: 14px 16px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface-soft);
+      outline: none;
+    }
+
+    .search-box:focus {
+      border-color: var(--primary);
+      background: #ffffff;
+    }
+
+    .glossary-tabs {
+      display: flex;
+      gap: 6px;
+    }
+
+    .tab-pill {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface-soft);
+      color: var(--text-muted);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .tab-pill.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .glossary-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: var(--surface-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .glossary-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .glossary-abbr {
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--primary-hover);
+    }
+
+    .glossary-status {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .status-mastered {
+      background: var(--success-bg);
+      color: var(--success);
+    }
+
+    .status-wrong {
+      background: var(--danger-bg);
+      color: var(--danger);
+    }
+
+    .status-pending {
+      background: #e2e8f0;
+      color: #475569;
+    }
+
+    .glossary-en {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .glossary-cn {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #0f172a;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      z-index: 60;
+      white-space: nowrap;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>航空英语缩略语拼写</h1>
+          <p>离线可用 · 错题自动后置重练</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button type="button" class="icon-btn" id="openGlossaryBtn">词表</button>
+        <button type="button" class="icon-btn" id="openResetBtn">重置</button>
+      </div>
+    </header>
+
+    <!-- Filter & Progress -->
+    <section class="panel">
+      <div class="filter-row">
+        <div class="select-group">
+          <select id="lessonSelect" aria-label="选择课程范围">
+            <option value="all">全部范围 (111题)</option>
+            <option value="1">Lesson 1 (17题)</option>
+            <option value="2">Lesson 2 (14题)</option>
+            <option value="3">Lesson 3 (7题)</option>
+            <option value="4">Lesson 4 (7题)</option>
+            <option value="5">Lesson 5 (13题)</option>
+            <option value="6">Lesson 6 (30题)</option>
+            <option value="7">Lesson 7 (36题)</option>
+          </select>
+          <select id="orderSelect" aria-label="选择出题顺序">
+            <option value="shuffle">随机乱序</option>
+            <option value="seq">原表顺序</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-val good" id="statMastered">0</div>
+          <div class="stat-lbl">已掌握</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-val accent" id="statRemaining">0</div>
+          <div class="stat-lbl">队列剩余</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-val bad" id="statWrongCount">0</div>
+          <div class="stat-lbl">累计错次</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-val" id="statAccuracy">-</div>
+          <div class="stat-lbl">首次正确率</div>
+        </div>
+      </div>
+
+      <div class="progress-track" aria-label="学习进度">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+    <!-- Quiz Card -->
+    <main class="quiz-card" id="quizCard">
+      <div class="card-meta">
+        <span class="badge badge-lesson" id="cardLessonBadge">Lesson 1</span>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <span class="badge badge-retry" id="cardRetryBadge" style="display:none;">错题回炉</span>
+          <span class="badge badge-queue" id="cardQueueBadge">待练 111 题</span>
+        </div>
+      </div>
+
+      <div class="prompt-area">
+        <div class="prompt-hint">请拼写出下方缩略词的完整英文全称</div>
+        <div class="abbr-display" id="abbrDisplay">PIC</div>
+      </div>
+
+      <div class="input-wrap">
+        <input
+          type="text"
+          id="answerInput"
+          class="spell-input"
+          placeholder="在此输入英文全称..."
+          autocapitalize="off"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+        />
+      </div>
+
+      <div class="btn-row" id="submitRow">
+        <button type="button" class="btn btn-secondary" id="skipBtn">不会 / 看答案</button>
+        <button type="button" class="btn btn-primary" id="submitBtn">提交检查</button>
+      </div>
+
+      <div class="feedback-box" id="feedbackBox">
+        <div class="feedback-title">
+          <span id="feedbackStatusText">回答正确</span>
+          <span id="feedbackStreakText"></span>
+        </div>
+
+        <div id="userWrongWrap" style="display:none;">
+          <div class="answer-label">你的拼写</div>
+          <div class="user-wrong-text" id="userWrongText"></div>
+        </div>
+
+        <div class="answer-block">
+          <div class="answer-label">标准英文全称</div>
+          <div class="answer-en" id="correctEnText"></div>
+          <div class="answer-label" style="margin-top:8px;">中文翻译</div>
+          <div class="answer-cn" id="correctCnText"></div>
+          <div class="answer-note" id="correctNoteText" style="display:none;"></div>
+        </div>
+
+        <div class="queue-notice" id="queueNotice" style="display:none;">
+          该题已自动放到靠后位置，稍后会再次出现，直到答对为止。
+        </div>
+
+        <button type="button" class="btn btn-success" id="nextBtn">下一题 (回车)</button>
+      </div>
+    </main>
+
+    <!-- Completion Card -->
+    <section class="complete-card" id="completeCard">
+      <div class="complete-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2 style="margin:0;font-size:20px;">本轮缩略词已全部掌握！</h2>
+      <p id="completeSummary" style="margin:0;color:var(--text-muted);font-size:14px;"></p>
+      <div style="display:flex;gap:10px;width:100%;margin-top:8px;">
+        <button type="button" class="btn btn-primary" id="restartAfterCompleteBtn" style="flex:1;">再来一轮</button>
+        <button type="button" class="btn btn-secondary" id="viewGlossaryAfterBtn" style="flex:1;">查看词表</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Glossary Modal -->
+  <div class="modal-backdrop" id="glossaryModal" role="dialog" aria-modal="true" aria-labelledby="glossaryTitle">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h2 id="glossaryTitle">缩略语词表与错题记录</h2>
+        <button type="button" class="modal-close" id="closeGlossaryBtn">关闭</button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="search-box" id="glossarySearch" placeholder="搜索缩略词、英文全称或中文..." />
+        <div class="glossary-tabs">
+          <button type="button" class="tab-pill active" data-tab="all">全部</button>
+          <button type="button" class="tab-pill" data-tab="wrong">曾答错</button>
+          <button type="button" class="tab-pill" data-tab="pending">待掌握</button>
+          <button type="button" class="tab-pill" data-tab="mastered">已掌握</button>
+        </div>
+        <div id="glossaryList" style="display:flex;flex-direction:column;gap:8px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reset Confirm Modal -->
+  <div class="modal-backdrop" id="resetModal" role="dialog" aria-modal="true" aria-labelledby="resetTitle">
+    <div class="modal-sheet" style="max-width:420px;">
+      <div class="modal-header">
+        <h2 id="resetTitle">重新开始本轮练习？</h2>
+        <button type="button" class="modal-close" id="closeResetBtn">取消</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin:0;font-size:14px;color:var(--text-muted);">将清空当前范围内的已掌握记录与队列进度，重新从头开始拼写练习。</p>
+        <div style="display:flex;gap:10px;margin-top:8px;">
+          <button type="button" class="btn btn-secondary" id="cancelResetBtn" style="flex:1;">取消</button>
+          <button type="button" class="btn btn-primary" id="confirmResetBtn" style="flex:1;background:var(--danger);">确认重置</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // 完整题库：严格提取自《半期缩略词.pdf》（第1–3页共111条汇总 + 第4–7页分课标注）
+    const VOCAB = [
+      { id: 1, abbr: "PIC", full: "Pilot in Command", cn: "责任机长", lessons: [1] },
+      { id: 2, abbr: "F/O", full: "First Officer", cn: "副驾驶", lessons: [1] },
+      { id: 3, abbr: "SIC", full: "Second in Command", cn: "副驾驶", lessons: [1] },
+      { id: 4, abbr: "CAAC", full: "Civil Aviation Administration of China", cn: "中国民用航空局", lessons: [1] },
+      { id: 5, abbr: "CCAR", full: "China Civil Aviation Regulations", cn: "中国民用航空规章", lessons: [1] },
+      { id: 6, abbr: "ICAO", full: "International Civil Aviation Organization", cn: "国际民用航空组织", lessons: [1] },
+      { id: 7, abbr: "FAA", full: "Federal Aviation Administration", cn: "美国联邦航空管理局", lessons: [1, 5] },
+      { id: 8, abbr: "PF", full: "Pilot Flying", cn: "执飞飞行员", lessons: [1] },
+      { id: 9, abbr: "PNF", full: "Pilot Not Flying", cn: "不执飞飞行员", lessons: [1] },
+      { id: 10, abbr: "PM", full: "Pilot Monitoring", cn: "监控飞行员", lessons: [1] },
+      { id: 11, abbr: "PPL", full: "Private Pilot Licence", cn: "私用驾驶员执照", lessons: [1] },
+      { id: 12, abbr: "CPL", full: "Commercial Pilot Licence", cn: "商用驾驶员执照", lessons: [1] },
+      { id: 13, abbr: "ATPL", full: "Airline Transport Pilot Licence", cn: "航线运输驾驶员执照", lessons: [1] },
+      { id: 14, abbr: "IFR", full: "Instrument Flight Rules", cn: "仪表飞行规则", lessons: [1] },
+      { id: 15, abbr: "VFR", full: "Visual Flight Rules", cn: "目视飞行规则", lessons: [1, 4] },
+      { id: 16, abbr: "AIM", full: "Aeronautical Information Manual", cn: "航空情报手册", lessons: [1] },
+      { id: 17, abbr: "ID", full: "Identification", cn: "识别；身份识别", lessons: [1] },
+      { id: 18, abbr: "EFIS", full: "Electronic Flight Instrument System", cn: "电子飞行仪表系统", lessons: [2, 6] },
+      { id: 19, abbr: "PFD", full: "Primary Flight Display", cn: "主飞行显示器", lessons: [2] },
+      { id: 20, abbr: "MFD", full: "Multi-Function Display", cn: "多功能显示器", lessons: [2, 6] },
+      { id: 21, abbr: "ND", full: "Navigation Display", cn: "导航显示器", lessons: [2, 6] },
+      { id: 22, abbr: "CDI", full: "Course Deviation Indicator", cn: "航道偏离指示器", lessons: [2] },
+      { id: 23, abbr: "ADI", full: "Attitude Director Indicator", cn: "姿态指引仪", lessons: [2, 6] },
+      { id: 24, abbr: "HSI", full: "Horizontal Situation Indicator", cn: "水平状态指示器", lessons: [2] },
+      { id: 25, abbr: "EICAS", full: "Engine Indicating and Crew Alerting System", cn: "发动机指示与机组警告系统", lessons: [2] },
+      { id: 26, abbr: "ECAM", full: "Electronic Centralized Aircraft Monitor", cn: "电子集中式飞机监控系统", lessons: [2] },
+      { id: 27, abbr: "EWD", full: "Engine/Warning Display", cn: "发动机／警告显示器", lessons: [2] },
+      { id: 28, abbr: "SD", full: "System Display", cn: "系统显示器", lessons: [2] },
+      { id: 29, abbr: "SA", full: "Situational Awareness", cn: "情景意识", lessons: [2] },
+      { id: 30, abbr: "SOP", full: "Standard Operating Procedure", cn: "标准操作程序", lessons: [2] },
+      { id: 31, abbr: "CRM", full: "Crew Resource Management", cn: "机组资源管理", lessons: [2] },
+      { id: 32, abbr: "PTU", full: "Power Transfer Unit", cn: "动力传输组件", lessons: [3] },
+      { id: 33, abbr: "PCU", full: "Power Control Unit", cn: "动力控制组件", lessons: [3] },
+      { id: 34, abbr: "POH", full: "Pilot’s Operating Handbook", cn: "飞行员操作手册", lessons: [3, 5, 7] },
+      { id: 35, abbr: "AFM", full: "Airplane Flight Manual", cn: "飞机飞行手册", lessons: [3, 4, 7] },
+      { id: 36, abbr: "CG", full: "Center of Gravity", cn: "重心", lessons: [3, 5, 6] },
+      { id: 37, abbr: "LE", full: "Leading Edge", cn: "前缘", lessons: [3] },
+      { id: 38, abbr: "TE", full: "Trailing Edge", cn: "后缘", lessons: [3] },
+      { id: 39, abbr: "VMC", full: "Visual Meteorological Conditions", cn: "目视气象条件", lessons: [4] },
+      { id: 40, abbr: "IMC", full: "Instrument Meteorological Conditions", cn: "仪表气象条件", lessons: [4] },
+      { id: 41, abbr: "FBW", full: "Fly-by-Wire", cn: "电传操纵", lessons: [4] },
+      { id: 42, abbr: "STAB", full: "Stabilizer", cn: "安定面", lessons: [4] },
+      { id: 43, abbr: "HYD", full: "Hydraulics", cn: "液压系统", lessons: [4] },
+      { id: 44, abbr: "APU", full: "Auxiliary Power Unit", cn: "辅助动力装置", lessons: [5, 7] },
+      { id: 45, abbr: "POB", full: "Persons on Board", cn: "机上人员", lessons: [5] },
+      { id: 46, abbr: "NM", full: "Nautical Mile", cn: "海里", lessons: [5] },
+      { id: 47, abbr: "ILS", full: "Instrument Landing System", cn: "仪表着陆系统", lessons: [5] },
+      { id: 48, abbr: "ATC", full: "Air Traffic Control", cn: "空中交通管制", lessons: [5] },
+      { id: 49, abbr: "POM", full: "Pilot Operating Manual", cn: "飞行操作手册", lessons: [5] },
+      { id: 50, abbr: "MEL", full: "Minimum Equipment List", cn: "最低设备清单", lessons: [5] },
+      { id: 51, abbr: "VNE", full: "Never Exceed Speed", cn: "不可超越速度", lessons: [5] },
+      { id: 52, abbr: "ACFT", full: "Aircraft", cn: "航空器", lessons: [5] },
+      { id: 53, abbr: "NAV", full: "Navigation", cn: "导航", lessons: [5] },
+      { id: 54, abbr: "AFCS", full: "Automatic Flight Control System", cn: "自动飞行控制系统", lessons: [6] },
+      { id: 55, abbr: "DFCS", full: "Digital Flight Control System", cn: "数字飞行控制系统", lessons: [6] },
+      { id: 56, abbr: "ADC", full: "Air Data Computer", cn: "大气数据计算机", lessons: [6] },
+      { id: 57, abbr: "A/T", full: "Autothrottle", cn: "自动油门", lessons: [6] },
+      { id: 58, abbr: "A/P", full: "Autopilot", cn: "自动驾驶仪", lessons: [6] },
+      { id: 59, abbr: "FCC", full: "Flight Control Computer", cn: "飞行控制计算机", lessons: [6] },
+      { id: 60, abbr: "IAS", full: "Indicated Airspeed", cn: "指示空速", lessons: [6] },
+      { id: 61, abbr: "AOA", full: "Angle of Attack", cn: "迎角", lessons: [6] },
+      { id: 62, abbr: "FD", full: "Flight Director", cn: "飞行指引仪", lessons: [6] },
+      { id: 63, abbr: "MCP", full: "Mode Control Panel", cn: "方式控制面板", lessons: [6] },
+      { id: 64, abbr: "FMS", full: "Flight Management System", cn: "飞行管理系统", lessons: [6] },
+      { id: 65, abbr: "GPS", full: "Global Positioning System", cn: "全球定位系统（美国）", lessons: [6] },
+      { id: 66, abbr: "GNSS", full: "Global Navigation Satellite System", cn: "全球卫星导航系统", lessons: [6] },
+      { id: 67, abbr: "RNP", full: "Required Navigation Performance", cn: "所需导航性能", lessons: [6] },
+      { id: 68, abbr: "RNAV", full: "Area Navigation", cn: "区域导航", lessons: [6] },
+      { id: 69, abbr: "PBN", full: "Performance-Based Navigation", cn: "基于性能的导航", lessons: [6] },
+      { id: 70, abbr: "LNAV", full: "Lateral Navigation", cn: "横向导航", lessons: [6] },
+      { id: 71, abbr: "VNAV", full: "Vertical Navigation", cn: "垂直导航", lessons: [6] },
+      { id: 72, abbr: "INS", full: "Inertial Navigation System", cn: "惯性导航系统", lessons: [6] },
+      { id: 73, abbr: "IRS", full: "Inertial Reference System", cn: "惯性基准系统", lessons: [6] },
+      { id: 74, abbr: "VSI", full: "Vertical Speed Indicator", cn: "垂直速度表", lessons: [6] },
+      { id: 75, abbr: "ASI", full: "Airspeed Indicator", cn: "空速表", lessons: [6] },
+      { id: 76, abbr: "SID", full: "Standard Instrument Departure", cn: "标准仪表离场程序", lessons: [6] },
+      { id: 77, abbr: "STAR", full: "Standard Terminal Arrival Route", cn: "标准终端进场航路", lessons: [6] },
+      { id: 78, abbr: "MSA", full: "Minimum Safe Altitude", cn: "最低安全高度", lessons: [6] },
+      { id: 79, abbr: "MEC", full: "Main Engine Control", cn: "主发动机控制装置", lessons: [7] },
+      { id: 80, abbr: "PMC", full: "Power Management Control", cn: "功率管理控制系统", lessons: [7] },
+      { id: 81, abbr: "EIS", full: "Engine Instrument System", cn: "发动机仪表系统", lessons: [7] },
+      { id: 82, abbr: "EGT", full: "Exhaust Gas Temperature", cn: "排气温度", lessons: [7] },
+      { id: 83, abbr: "FF/FU", full: "Fuel Flow / Fuel Used", cn: "燃油流量／已用燃油量", lessons: [7] },
+      { id: 84, abbr: "FOB", full: "Fuel on Board", cn: "机上燃油量", lessons: [7] },
+      { id: 85, abbr: "EDP", full: "Engine-Driven Pump", cn: "发动机驱动泵", lessons: [7] },
+      { id: 86, abbr: "INOP", full: "Inoperative", cn: "不工作；失效", lessons: [7] },
+      { id: 87, abbr: "MAX CONT", full: "Maximum Continuous Thrust", cn: "最大持续推力", lessons: [7] },
+      { id: 88, abbr: "TO/GA", full: "Takeoff / Go-Around", cn: "起飞／复飞", lessons: [7] },
+      { id: 89, abbr: "AC", full: "Alternating Current", cn: "交流电", lessons: [7] },
+      { id: 90, abbr: "DC", full: "Direct Current", cn: "直流电", lessons: [7] },
+      { id: 91, abbr: "TR", full: "Transformer-Rectifier", cn: "变压整流器", lessons: [7] },
+      { id: 92, abbr: "BAT", full: "Battery", cn: "电池；电瓶", lessons: [7] },
+      { id: 93, abbr: "IDG", full: "Integrated Drive Generator", cn: "整体驱动发电机", lessons: [7] },
+      { id: 94, abbr: "EMER GEN", full: "Emergency Generator", cn: "应急发电机", lessons: [7] },
+      { id: 95, abbr: "RAT", full: "Ram Air Turbine", cn: "冲压空气涡轮", lessons: [7] },
+      { id: 96, abbr: "EMER ELEC PWR", full: "Emergency Electrical Power", cn: "应急电源", lessons: [7] },
+      { id: 97, abbr: "ECS", full: "Environmental Control System", cn: "环境控制系统", lessons: [7] },
+      { id: 98, abbr: "HDG SEL", full: "Heading Select", cn: "航向选择", lessons: [7] },
+      { id: 99, abbr: "LVL CHG", full: "Level Change", cn: "高度改变方式", lessons: [7] },
+      { id: 100, abbr: "RTO", full: "Rejected Takeoff", cn: "中断起飞", lessons: [7] },
+      { id: 101, abbr: "OAT", full: "Outside Air Temperature", cn: "外界大气温度", lessons: [7] },
+      { id: 102, abbr: "V₁", full: "Takeoff Decision Speed", cn: "起飞决断速度", lessons: [7] },
+      { id: 103, abbr: "Vr", full: "Rotation Speed", cn: "抬轮速度", lessons: [7] },
+      { id: 104, abbr: "V₂", full: "Takeoff Safety Speed", cn: "起飞安全速度", lessons: [7] },
+      { id: 105, abbr: "QRH", full: "Quick Reference Handbook", cn: "快速参考手册", lessons: [7] },
+      { id: 106, abbr: "NNC", full: "Non-Normal Checklist", cn: "非正常检查单", lessons: [7] },
+      { id: 107, abbr: "NOTAM", full: "Notice to Airmen", cn: "航行通告", lessons: [7] },
+      {
+        id: 108,
+        abbr: "TCAS",
+        full: "Traffic Alert and Collision Avoidance System",
+        aliases: ["Traffic Collision Avoidance System"],
+        cn: "空中交通警戒与防撞系统",
+        note: "分课汇总 Lesson 7 中亦作 Traffic Collision Avoidance System（空中交通防撞系统），两种拼写均判正确。",
+        lessons: [7]
+      },
+      { id: 109, abbr: "GPWS", full: "Ground Proximity Warning System", cn: "近地警告系统", lessons: [7] },
+      { id: 110, abbr: "CFIT", full: "Controlled Flight Into Terrain", cn: "可控飞行撞地", lessons: [7] },
+      { id: 111, abbr: "FOD", full: "Foreign Object Damage / Foreign Object Debris", cn: "外来物损伤／外来物碎片", lessons: [7] }
+    ];
+
+    const STORAGE_KEY = "aviation_abbr_quiz_v1";
+
+    const state = {
+      lesson: "all",
+      order: "shuffle",
+      queue: [],
+      masteredIds: [],
+      wrongCounts: {},
+      firstAttemptedIds: [],
+      firstCorrectIds: [],
+      totalWrongEvents: 0,
+      streak: 0,
+      phase: "answering", // "answering" | "reviewed"
+      lastResult: null,
+      glossaryTab: "all",
+      glossaryQuery: ""
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const vocabMap = new Map(VOCAB.map((item) => [item.id, item]));
+
+    function getFilteredIds(lessonVal) {
+      if (lessonVal === "all") return VOCAB.map((v) => v.id);
+      const num = Number(lessonVal);
+      return VOCAB.filter((v) => v.lessons.includes(num)).map((v) => v.id);
+    }
+
+    function shuffleArray(arr) {
+      const copy = arr.slice();
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function normalizeSpelling(str) {
+      return (str || "")
+        .toLowerCase()
+        .replace(/[’‘`]/g, "'")
+        .replace(/[／]/g, "/")
+        .replace(/\s*\/\s*/g, "/")
+        .replace(/-/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function isAnswerCorrect(userRaw, item) {
+      const userNorm = normalizeSpelling(userRaw);
+      if (!userNorm) return false;
+      const candidates = [item.full, ...(item.aliases || [])];
+      return candidates.some((cand) => normalizeSpelling(cand) === userNorm);
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          lesson: state.lesson,
+          order: state.order,
+          queue: state.queue,
+          masteredIds: state.masteredIds,
+          wrongCounts: state.wrongCounts,
+          firstAttemptedIds: state.firstAttemptedIds,
+          firstCorrectIds: state.firstCorrectIds,
+          totalWrongEvents: state.totalWrongEvents,
+          streak: state.streak
+        }));
+      } catch (e) {
+        // Ignore storage restrictions in private mode
+      }
+    }
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return false;
+        const parsed = JSON.parse(raw);
+        if (!parsed || !Array.isArray(parsed.queue)) return false;
+        state.lesson = parsed.lesson || "all";
+        state.order = parsed.order || "shuffle";
+        state.queue = parsed.queue.filter((id) => vocabMap.has(id));
+        state.masteredIds = (parsed.masteredIds || []).filter((id) => vocabMap.has(id));
+        state.wrongCounts = parsed.wrongCounts || {};
+        state.firstAttemptedIds = parsed.firstAttemptedIds || [];
+        state.firstCorrectIds = parsed.firstCorrectIds || [];
+        state.totalWrongEvents = parsed.totalWrongEvents || 0;
+        state.streak = parsed.streak || 0;
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function initSession(lessonVal, orderVal) {
+      state.lesson = lessonVal;
+      state.order = orderVal;
+      const ids = getFilteredIds(lessonVal);
+      state.queue = orderVal === "shuffle" ? shuffleArray(ids) : ids;
+      state.masteredIds = [];
+      state.wrongCounts = {};
+      state.firstAttemptedIds = [];
+      state.firstCorrectIds = [];
+      state.totalWrongEvents = 0;
+      state.streak = 0;
+      state.phase = "answering";
+      state.lastResult = null;
+      saveState();
+      render();
+    }
+
+    function showToast(msg) {
+      const el = $("toast");
+      el.textContent = msg;
+      el.classList.add("show");
+      clearTimeout(showToast._timer);
+      showToast._timer = setTimeout(() => el.classList.remove("show"), 2000);
+    }
+
+    function handleCheck(isSkip) {
+      if (state.phase !== "answering" || state.queue.length === 0) return;
+
+      const currentId = state.queue[0];
+      const item = vocabMap.get(currentId);
+      const rawInput = $("answerInput").value;
+
+      if (!isSkip && !rawInput.trim()) {
+        showToast("请先输入英文全称，或点击「不会 / 看答案」");
+        $("answerInput").focus();
+        return;
+      }
+
+      const correct = !isSkip && isAnswerCorrect(rawInput, item);
+
+      if (!state.firstAttemptedIds.includes(currentId)) {
+        state.firstAttemptedIds.push(currentId);
+        if (correct) state.firstCorrectIds.push(currentId);
+      }
+
+      // Remove current question from front of queue
+      state.queue.shift();
+
+      if (correct) {
+        if (!state.masteredIds.includes(currentId)) {
+          state.masteredIds.push(currentId);
+        }
+        state.streak += 1;
+      } else {
+        state.wrongCounts[currentId] = (state.wrongCounts[currentId] || 0) + 1;
+        state.totalWrongEvents += 1;
+        state.streak = 0;
+
+        // Put wrong item later in the queue (4-6 positions behind, or at the end if shorter)
+        const remainingLen = state.queue.length;
+        const insertIdx = remainingLen <= 4
+          ? remainingLen
+          : Math.min(remainingLen, 4 + Math.floor(Math.random() * 3));
+        state.queue.splice(insertIdx, 0, currentId);
+      }
+
+      state.phase = "reviewed";
+      state.lastResult = {
+        correct,
+        skipped: isSkip,
+        userInput: rawInput.trim(),
+        item
+      };
+
+      saveState();
+      render();
+    }
+
+    function handleNext() {
+      if (state.phase !== "reviewed") return;
+      state.phase = "answering";
+      state.lastResult = null;
+      $("answerInput").value = "";
+      render();
+      if (state.queue.length > 0) {
+        $("answerInput").focus();
+      }
+    }
+
+    function renderStats() {
+      const totalScope = getFilteredIds(state.lesson).length;
+      const mastered = state.masteredIds.length;
+      const remaining = state.queue.length;
+      const pct = totalScope > 0 ? Math.round((mastered / totalScope) * 100) : 0;
+
+      $("statMastered").textContent = `${mastered}/${totalScope}`;
+      $("statRemaining").textContent = remaining;
+      $("statWrongCount").textContent = state.totalWrongEvents;
+
+      if (state.firstAttemptedIds.length > 0) {
+        const acc = Math.round((state.firstCorrectIds.length / state.firstAttemptedIds.length) * 100);
+        $("statAccuracy").textContent = `${acc}%`;
+      } else {
+        $("statAccuracy").textContent = "-";
+      }
+
+      $("progressFill").style.width = `${pct}%`;
+    }
+
+    function render() {
+      $("lessonSelect").value = state.lesson;
+      $("orderSelect").value = state.order;
+      renderStats();
+
+      if (state.queue.length === 0 && state.phase === "answering") {
+        $("quizCard").style.display = "none";
+        $("completeCard").classList.add("show");
+        const totalScope = getFilteredIds(state.lesson).length;
+        const acc = state.firstAttemptedIds.length > 0
+          ? Math.round((state.firstCorrectIds.length / state.firstAttemptedIds.length) * 100)
+          : 100;
+        $("completeSummary").textContent = `共掌握 ${totalScope} 个缩略词，首次拼写正确率 ${acc}%，累计错题重练 ${state.totalWrongEvents} 次。`;
+        return;
+      }
+
+      $("quizCard").style.display = "flex";
+      $("completeCard").classList.remove("show");
+
+      const currentItem = state.phase === "reviewed"
+        ? state.lastResult.item
+        : vocabMap.get(state.queue[0]);
+
+      const wrongTimes = state.wrongCounts[currentItem.id] || 0;
+      $("cardLessonBadge").textContent = currentItem.lessons.map((l) => `Lesson ${l}`).join(" / ");
+      $("cardRetryBadge").style.display = wrongTimes > 0 ? "inline-flex" : "none";
+      $("cardRetryBadge").textContent = `错题回炉 · 已错 ${wrongTimes} 次`;
+      $("cardQueueBadge").textContent = `队列剩 ${state.queue.length} 题`;
+      $("abbrDisplay").textContent = currentItem.abbr;
+
+      const input = $("answerInput");
+      const feedbackBox = $("feedbackBox");
+
+      if (state.phase === "answering") {
+        input.disabled = false;
+        $("submitRow").style.display = "flex";
+        feedbackBox.className = "feedback-box";
+      } else {
+        input.disabled = true;
+        $("submitRow").style.display = "none";
+        const res = state.lastResult;
+        feedbackBox.className = `feedback-box show ${res.correct ? "is-correct" : "is-wrong"}`;
+        $("feedbackStatusText").textContent = res.correct
+          ? "拼写正确！"
+          : (res.skipped ? "已跳过（计为待巩固）" : "拼写有误");
+        $("feedbackStreakText").textContent = res.correct && state.streak >= 2 ? `连对 ${state.streak} 题` : "";
+
+        if (!res.correct && res.userInput) {
+          $("userWrongWrap").style.display = "block";
+          $("userWrongText").textContent = res.userInput;
+        } else {
+          $("userWrongWrap").style.display = "none";
+        }
+
+        $("correctEnText").textContent = res.item.full;
+        $("correctCnText").textContent = res.item.cn;
+        if (res.item.note) {
+          $("correctNoteText").style.display = "block";
+          $("correctNoteText").textContent = res.item.note;
+        } else {
+          $("correctNoteText").style.display = "none";
+        }
+
+        $("queueNotice").style.display = res.correct ? "none" : "inline-flex";
+      }
+    }
+
+    function renderGlossary() {
+      const scopeIds = new Set(getFilteredIds(state.lesson));
+      const q = state.glossaryQuery.trim().toLowerCase();
+      const listEl = $("glossaryList");
+
+      const items = VOCAB.filter((item) => {
+        if (!scopeIds.has(item.id)) return false;
+        const isMastered = state.masteredIds.includes(item.id);
+        const wrongNum = state.wrongCounts[item.id] || 0;
+
+        if (state.glossaryTab === "wrong" && wrongNum === 0) return false;
+        if (state.glossaryTab === "pending" && isMastered) return false;
+        if (state.glossaryTab === "mastered" && !isMastered) return false;
+
+        if (q) {
+          const hay = `${item.abbr} ${item.full} ${item.cn}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      if (items.length === 0) {
+        listEl.innerHTML = `<div style="text-align:center;padding:24px;color:var(--text-muted);font-size:14px;">没有符合条件的缩略词</div>`;
+        return;
+      }
+
+      listEl.innerHTML = items.map((item) => {
+        const isMastered = state.masteredIds.includes(item.id);
+        const wrongNum = state.wrongCounts[item.id] || 0;
+        let statusClass = "status-pending";
+        let statusText = "待掌握";
+        if (isMastered) {
+          statusClass = "status-mastered";
+          statusText = wrongNum > 0 ? `已掌握（曾错${wrongNum}次）` : "已掌握";
+        } else if (wrongNum > 0) {
+          statusClass = "status-wrong";
+          statusText = `已错 ${wrongNum} 次`;
+        }
+        return `
+          <div class="glossary-item">
+            <div class="glossary-top">
+              <span class="glossary-abbr">${item.abbr} <small style="font-weight:500;color:var(--text-muted);font-size:11px;">L${item.lessons.join("/")}</small></span>
+              <span class="glossary-status ${statusClass}">${statusText}</span>
+            </div>
+            <div class="glossary-en">${item.full}</div>
+            <div class="glossary-cn">${item.cn}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // Event bindings
+    $("submitBtn").addEventListener("click", () => handleCheck(false));
+    $("skipBtn").addEventListener("click", () => handleCheck(true));
+    $("nextBtn").addEventListener("click", handleNext);
+
+    $("answerInput").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        if (state.phase === "answering") {
+          handleCheck(false);
+        }
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && state.phase === "reviewed" && !$("glossaryModal").classList.contains("open") && !$("resetModal").classList.contains("open")) {
+        e.preventDefault();
+        handleNext();
+      }
+    });
+
+    $("lessonSelect").addEventListener("change", (e) => {
+      $("answerInput").value = "";
+      initSession(e.target.value, state.order);
+      showToast("已切换练习范围");
+    });
+
+    $("orderSelect").addEventListener("change", (e) => {
+      $("answerInput").value = "";
+      initSession(state.lesson, e.target.value);
+      showToast(e.target.value === "shuffle" ? "已切换为随机乱序" : "已切换为原表顺序");
+    });
+
+    $("restartAfterCompleteBtn").addEventListener("click", () => {
+      $("answerInput").value = "";
+      initSession(state.lesson, state.order);
+    });
+
+    $("viewGlossaryAfterBtn").addEventListener("click", () => {
+      renderGlossary();
+      $("glossaryModal").classList.add("open");
+    });
+
+    $("openGlossaryBtn").addEventListener("click", () => {
+      renderGlossary();
+      $("glossaryModal").classList.add("open");
+    });
+
+    $("closeGlossaryBtn").addEventListener("click", () => {
+      $("glossaryModal").classList.remove("open");
+    });
+
+    $("glossaryModal").addEventListener("click", (e) => {
+      if (e.target === $("glossaryModal")) $("glossaryModal").classList.remove("open");
+    });
+
+    $("glossarySearch").addEventListener("input", (e) => {
+      state.glossaryQuery = e.target.value;
+      renderGlossary();
+    });
+
+    document.querySelectorAll(".tab-pill").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-pill").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.glossaryTab = btn.dataset.tab;
+        renderGlossary();
+      });
+    });
+
+    $("openResetBtn").addEventListener("click", () => {
+      $("resetModal").classList.add("open");
+    });
+
+    $("closeResetBtn").addEventListener("click", () => {
+      $("resetModal").classList.remove("open");
+    });
+
+    $("cancelResetBtn").addEventListener("click", () => {
+      $("resetModal").classList.remove("open");
+    });
+
+    $("resetModal").addEventListener("click", (e) => {
+      if (e.target === $("resetModal")) $("resetModal").classList.remove("open");
+    });
+
+    $("confirmResetBtn").addEventListener("click", () => {
+      $("resetModal").classList.remove("open");
+      $("answerInput").value = "";
+      initSession(state.lesson, state.order);
+      showToast("已重置本轮进度");
+    });
+
+    // Boot
+    if (!loadState()) {
+      initSession("all", "shuffle");
+    } else {
+      render();
+    }
+  </script>
+</body>
+</html>
